@@ -1,495 +1,251 @@
 /* =============================================
-
-   BASE
-
-   ============================================= */
-
+   BASE
+   ============================================= */
 body {
-
-    margin: 0;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-color: #f4f6f8;
-
-    color: #333;
-
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
 }
-
- 
 
 header {
-
-    background: #0f172a;
-
-    color: white;
-
-    padding: 40px 20px;
-
-    text-align: center;
-
+    background: #0f172a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
-
- 
 
 header h1 {
-
-    margin: 0;
-
-    font-size: 2.5rem;
-
+    margin: 0;
+    font-size: 2.5rem;
 }
-
- 
 
 header p {
-
-    font-size: 1.1rem;
-
-    opacity: 0.9;
-
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
-
- 
 
 nav {
-
-    background: #1e293b;
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 20px;
-
-    padding: 10px 0;
-
+    background: #1e293b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
 }
-
- 
 
 nav a {
-
-    color: white;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-
- 
 
 nav a:hover {
-
-    text-decoration: underline;
-
+    text-decoration: underline;
 }
-
- 
 
 section {
-
-    max-width: 1000px;
-
-    margin: auto;
-
-    padding: 40px 20px;
-
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
 }
-
- 
 
 h2 {
-
-    border-bottom: 3px solid #0f172a;
-
-    display: inline-block;
-
-    padding-bottom: 5px;
-
+    border-bottom: 3px solid #0f172a;
+    display: inline-block;
+    padding-bottom: 5px;
 }
-
- 
 
 .card {
-
-    background: white;
-
-    border-radius: 10px;
-
-    padding: 20px;
-
-    margin: 20px 0;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
- 
 
 .skills span {
-
-    display: inline-block;
-
-    background: #0f172a;
-
-    color: white;
-
-    padding: 6px 12px;
-
-    border-radius: 20px;
-
-    margin: 5px;
-
-    font-size: 0.9rem;
-
+    display: inline-block;
+    background: #0f172a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
 }
-
- 
 
 footer {
-
-    background: #0f172a;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 20px;
-
-    margin-top: 40px;
-
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
-
- 
 
 /* =============================================
-
-   PAGE E5 – COMPÉTENCES
-
-   ============================================= */
-
- 
+   PAGE E5 – COMPÉTENCES
+   ============================================= */
 
 .e5-subtitle {
-
-    color: #64748b;
-
-    font-size: 0.95rem;
-
-    margin-bottom: 36px;
-
-    margin-top: -8px;
-
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 36px;
+    margin-top: -8px;
 }
-
- 
 
 /* Bloc compétence */
-
 .competence-block {
-
-    background: white;
-
-    border-radius: 10px;
-
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-
-    margin-bottom: 20px;
-
-    overflow: hidden;
-
-    border-left: 5px solid #38bdf8;
-
-    transition: box-shadow 0.25s;
-
-    cursor: pointer;
-
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-left: 5px solid #38bdf8;
+    transition: box-shadow 0.25s;
+    cursor: pointer;
 }
-
- 
 
 .competence-block:hover {
-
-    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
 }
-
- 
 
 /* Variante transversale (ambre) */
-
 .competence-transverse {
-
-    border-left-color: #f59e0b;
-
+    border-left-color: #f59e0b;
 }
-
- 
 
 /* En-tête cliquable */
-
 .comp-header {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    padding: 16px 20px;
-
-    user-select: none;
-
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    user-select: none;
 }
-
- 
 
 .comp-icon {
-
-    width: 40px;
-
-    height: 40px;
-
-    background: #0f172a;
-
-    border-radius: 10px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 1.2rem;
-
-    flex-shrink: 0;
-
+    width: 40px;
+    height: 40px;
+    background: #0f172a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
-
- 
 
 .comp-icon-transverse {
-
-    background: #92400e;
-
+    background: #92400e;
 }
-
- 
 
 .comp-title {
-
-    font-size: 0.97rem;
-
-    font-weight: 700;
-
-    color: #0f172a;
-
-    flex: 1;
-
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: #0f172a;
+    flex: 1;
 }
-
- 
 
 .comp-chevron {
-
-    color: #94a3b8;
-
-    font-size: 0.9rem;
-
-    transition: transform 0.25s;
-
+    color: #94a3b8;
+    font-size: 0.9rem;
+    transition: transform 0.25s;
 }
-
- 
 
 .competence-block.open .comp-chevron {
-
-    transform: rotate(180deg);
-
+    transform: rotate(180deg);
 }
-
- 
 
 /* Corps dépliable */
-
 .comp-body {
-
-    max-height: 0;
-
-    overflow: hidden;
-
-    transition: max-height 0.35s ease;
-
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
 }
-
- 
 
 .competence-block.open .comp-body {
-
-    max-height: 1000px;
-
+    max-height: 1000px;
 }
-
- 
 
 .comp-inner {
-
-    padding: 0 20px 18px 74px;
-
+    padding: 0 20px 18px 74px;
 }
-
- 
 
 /* Ligne sous-compétence */
-
 .sous-comp {
-
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 12px;
-
-    padding: 10px 0;
-
-    border-bottom: 1px solid #e2e8f0;
-
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
 }
-
- 
 
 .sous-comp:last-child {
-
-    border-bottom: none;
-
+    border-bottom: none;
 }
-
- 
 
 .sous-comp-bullet {
-
-    width: 8px;
-
-    height: 8px;
-
-    background: #38bdf8;
-
-    border-radius: 50%;
-
-    margin-top: 6px;
-
-    flex-shrink: 0;
-
+    width: 8px;
+    height: 8px;
+    background: #38bdf8;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
 }
-
- 
 
 .sous-comp-bullet-transverse {
-
-    background: #f59e0b;
-
+    background: #f59e0b;
 }
-
- 
 
 .sous-comp-text {
-
-    font-size: 0.91rem;
-
-    color: #334155;
-
-    line-height: 1.55;
-
+    font-size: 0.91rem;
+    color: #334155;
+    line-height: 1.55;
 }
-
- 
 
 /* Badge preuve placeholder */
-
 .proof-placeholder {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 4px;
-
-    margin-top: 5px;
-
-    font-size: 0.78rem;
-
-    color: #94a3b8;
-
-    border: 1px dashed #cbd5e1;
-
-    border-radius: 20px;
-
-    padding: 2px 10px;
-
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 5px;
+    font-size: 0.78rem;
+    color: #94a3b8;
+    border: 1px dashed #cbd5e1;
+    border-radius: 20px;
+    padding: 2px 10px;
 }
-
- 
 
 .proof-placeholder::before {
-
-    content: "🔗";
-
-    font-size: 0.72rem;
-
+    content: "🔗";
+    font-size: 0.72rem;
 }
-
- 
 
 /* Lien preuve réel (à utiliser quand la preuve est disponible) */
-
 .proof-link {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 4px;
-
-    margin-top: 5px;
-
-    font-size: 0.78rem;
-
-    color: #0ea5e9;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    border: 1px solid #0ea5e9;
-
-    border-radius: 20px;
-
-    padding: 2px 10px;
-
-    transition: background 0.2s, color 0.2s;
-
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 5px;
+    font-size: 0.78rem;
+    color: #0ea5e9;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #0ea5e9;
+    border-radius: 20px;
+    padding: 2px 10px;
+    transition: background 0.2s, color 0.2s;
 }
-
- 
 
 .proof-link:hover {
-
-    background: #0ea5e9;
-
-    color: white;
-
+    background: #0ea5e9;
+    color: white;
 }
 
- 
-
 .proof-link::before {
-
-    content: "📎";
-
+    content: "📎";
+    font-size: 0.72rem;
+}
     font-size: 0.72rem;
 
 }
