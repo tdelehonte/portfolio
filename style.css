@@ -1,79 +1,117 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
+/* Style global de la page E5 */
+.e5-subtitle {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Bloc de compétence cliquable */
+.competence-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.competence-block:hover {
+    background-color: #f1f1f1;
+    border-color: #bbb;
+}
+
+/* En-tête du bloc */
+.comp-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    user-select: none;
+}
+
+.comp-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.comp-title {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 1.1rem;
     color: #333;
 }
 
-header {
-    background: #0f172a;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-nav {
-    background: #1e293b;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-h2 {
-    border-bottom: 3px solid #0f172a;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.skills span {
-    display: inline-block;
-    background: #0f172a;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 20px;
-    margin: 5px;
+.comp-chevron {
     font-size: 0.9rem;
+    color: #888;
+    transition: transform 0.3s ease;
 }
 
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+/* Corps du bloc caché par défaut */
+.comp-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff;
+}
+
+.comp-inner {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* Styles quand le bloc est ouvert */
+.competence-block.open .comp-body {
+    max-height: 500px; /* Hauteur max de sécurité pour l'animation */
+}
+
+.competence-block.open .comp-chevron {
+    transform: rotate(180deg);
+}
+
+/* Style des sous-compétences */
+.sous-comp {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.sous-comp:last-child {
+    margin-bottom: 0;
+}
+
+.sous-comp-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.sous-comp-text {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Placeholders pour les futures preuves */
+.proof-placeholder {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #e74c3c;
+    background-color: #fadbd8;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+/* Teinte spécifique pour la compétence transversale */
+.competence-transverse {
+    border-left: 4px solid #2ecc71;
+}
+
+.competence-transverse .sous-comp-bullet {
+    background-color: #2ecc71;
 }
