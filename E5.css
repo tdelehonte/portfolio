@@ -1,11 +1,9 @@
-/* Style global de la page E5 */
 .e5-subtitle {
     font-style: italic;
     color: #666;
     margin-bottom: 20px;
 }
 
-/* Bloc de compétence cliquable */
 .competence-block {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -47,7 +45,6 @@
     transition: transform 0.3s ease;
 }
 
-/* Corps du bloc caché par défaut */
 .comp-body {
     max-height: 0;
     overflow: hidden;
@@ -96,7 +93,6 @@
     line-height: 1.4;
 }
 
-/* Placeholders pour les futures preuves */
 .proof-placeholder {
     display: inline-block;
     font-size: 0.85rem;
@@ -107,7 +103,6 @@
     margin-top: 4px;
 }
 
-/* Teinte spécifique pour la compétence transversale */
 .competence-transverse {
     border-left: 4px solid #2ecc71;
 }
