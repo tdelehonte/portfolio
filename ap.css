@@ -31,3 +31,31 @@
     color: #888;
     font-style: italic;
 }
+
+.mission-card ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.mission-card ul.mission-proof {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mission-card ul.mission-proof a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mission-card ul.mission-proof a:hover {
+    text-decoration: underline;
+}
+
+.mission-card ul.mission-proof li.proof-detail {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 4px;
+}
