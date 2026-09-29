@@ -1,0 +1,33 @@
+.ap-intro {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+.mission-meta {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.mission-card h4 {
+    margin: 14px 0 4px;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+.mission-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.a-completer {
+    color: #888;
+    font-style: italic;
+}
